@@ -1,0 +1,171 @@
+
+<html><head>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Varela+Round&amp;display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body id="t" class="neterror" style="font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 75%" jstcache="0">
+
+
+
+
+
+
+
+ 
+   
+   
+ 
+     
+ 
+
+
+
+
+<div class="container">
+    <div class="main-container scrollbar" id="style-1">
+         <div class="icons">
+            <ul>
+               <li>
+                  <a href="https://codepen.io/Femil_32/"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+               </li>
+               <li>
+                  <a href="https://www.instagram.com/femil_32/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+               </li>
+               <li>
+                  <a href="https://codepen.io/Femil_32/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+               </li>
+            </ul>
+         </div>
+         <div class="layer">
+            <div class="text">
+               <h4>Preston Capuchino</h4>
+               <p>Facturas</p>
+               <div class="skill">
+                  <i class="fab fa fa-dollar ">
+    <span>Efectivo</span>
+<number>$78.000</number>
+
+
+
+</i>
+                  <i class="fab fa fa-money">
+
+
+<span>Credito</span>
+<number>$1.000</number></i>
+                 
+                 
+               </div>
+            </div>
+
+<div class="skill2">
+<div class="block open" style="height: 100px;">
+<div id="modmachine">
+  <div class="title">Opciones</div>
+  <div class="buttonsodamachine">
+    <div class="btnitem">
+      <div class="img" style="
+    background-image: url(https://th.bing.com/th?q=Nescafe%20Cup&amp;pid=ImgDet&amp;w=192&amp;h=68&amp;c=1&amp;p=1&amp;mkt=es-xl&amp;adlt=demote);
+    background-repeat: no-repeat;
+    padding: 0px;
+">
+        <div class="mask">
+          <div class="text">Nescafe cafe
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="btnitem">
+      <div class="img" style="
+    background-image: url(https://th.bing.com/th?q=Nescafe%20Poster&amp;pid=ImgDet&amp;w=192&amp;h=68&amp;c=1&amp;p=1&amp;mkt=es-xl&amp;adlt=demote);
+    background-repeat: no-repeat;
+    padding: 0px;
+    background-size: 100% auto;
+">
+        <div class="mask">
+          <div class="text">Nescafe dos
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="btnitem">
+      <div class="img" style="
+    background-image: url(https://th.bing.com/th?q=Nescafe%20Anuncio&amp;pid=ImgDet&amp;w=192&amp;h=68&amp;c=1&amp;p=1&amp;mkt=es-xl&amp;adlt=demote);
+    background-repeat: no-repeat;
+    padding: 0px;
+    background-size: 100% auto;
+">
+        <div class="mask">
+          <div class="text">Nescafe clasico</div>
+        </div>
+      </div>
+    </div>
+    <div class="btnitem">
+      <div class="img" style="
+    background-image: url(https://th.bing.com/th?q=Banner%20Nescafe&amp;pid=ImgDet&amp;w=192&amp;h=68&amp;c=1&amp;p=1&amp;mkt=es-xl&amp;adlt=demote);
+    background-repeat: no-repeat;
+    padding: 0px;
+    background-size: 100% auto;
+">
+        <div class="mask">
+          <div class="text">Nescafe Con leche</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+   
+               <div class="block close" style="height: 20px;">f </div><div class="block close" style="height: 20px;"> g</div><div class="block close" style="height: 20px;">h </div></div>
+
+         </div>
+      </div>
+   
+   
+       
+</div>
+
+<script>
+
+$(document).ready(function() {
+    $(".block").click( function() {
+        var $this = $(this);
+        if ($this.hasClass("open")) {
+            $this.removeClass("open")
+                .addClass("close")
+                .animate( { "height" : "20px" }, 'fast' );        
+        } else {
+            $(".container").find(".open")
+                .removeClass("open")
+                .addClass("close")
+                .animate( { "height" : "20px" }, 'fast' );
+            $this.removeClass("close")
+                .addClass("open")
+                .animate( { "height": "100px" }, 'fast' );  
+        }
+    });
+});
+
+</script>
+
+
+   
+
+
+
+   
+
+
+
+
+
+</body></html>
