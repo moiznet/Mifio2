@@ -16,13 +16,14 @@
    border-radius:10px;
    overflow:hidden;
    background-color:  black;
+    -webkit-animation: image_blur 5s;
 }
 .main-container::before{
     content:"";
     position:absolute;
     width:100%;
     height:100%; 
-    background:url("https://images.unsplash.com/photo-1552562739-152fee1f81f3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njd8fG1hbGUlMjBwb3J0cmFpdCUyMGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=60") center/cover;
+    background:url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/man-with-backpack-looking-at-new-york-skyline-at-sunrise-rear-view-alexander-spatari.jpg") center/cover;
     transition:.7s cubic-bezier(.46, 1.48, .18, .81);
 }
 .icons{
@@ -85,17 +86,19 @@ li:nth-child(3) a{
     position:absolute;
     bottom:0;
     width:100%;
-    height:100px;
+    height:37hv;
     transform:translateY(150px);
+    background-color: blanchedalmond;
 }
 li,a,.layer{
-    background:#fff;
+    /*! background:#fff; */
     transition:.7s cubic-bezier(.46, 1.48, .18, .81);
 }
 .text{
     margin:.6rem;
     padding:5px;
 font-family: 'Varela Round', sans-serif;
+    font-size: 6em;
 }
 .text p{
     color:#bfbfbf;
@@ -103,6 +106,8 @@ font-family: 'Varela Round', sans-serif;
 .skill{
     font-size:1.7rem;
     padding-top:.5rem;
+    margin-top: 2vh;
+    background-color: thistle;
 }
 .fab{ margin:0 1rem 0 0;}
 .fab:nth-child(1){
@@ -110,7 +115,28 @@ color:#E34F26;
 }
 .fab:nth-child(2){
 color:#1572B6;
+border-left: 1px solid gray;
+padding-left: ;
+font-size: 2em;
+filter: blur(3.5px);
+
+    
 }
+
+
+@-webkit-keyframes image_blur {
+    0% { -webkit-filter: blur(0px);}
+    50%; { -webkit-filter: blur(5px);}
+    100% { -webkit-filter: blur(0px);}
+}
+
+
+
+.fab:nth-child(2):hover {
+    -webkit-animation: image_blur 5s; 
+}
+
+
 .fab:nth-child(3){ color:#f7df1e;}
 .fab:nth-child(4){color:#61DAFB;}
 .main-container:hover .layer{
@@ -125,7 +151,7 @@ color:#1572B6;
     opacity:1;
 }
 number{
-font-size:17px;
+font-size:1em;
 }
 .block.close {}
 .skill2 { width: 100%;}

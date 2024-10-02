@@ -142,15 +142,15 @@ $(document).ready(function() {
         if ($this.hasClass("open")) {
             $this.removeClass("open")
                 .addClass("close")
-                .animate( { "height" : "20px" }, 'fast' );        
+                .animate( { "height" : "40px" }, 'fast' );        
         } else {
             $(".container").find(".open")
                 .removeClass("open")
                 .addClass("close")
-                .animate( { "height" : "20px" }, 'fast' );
+                .animate( { "height" : "6vh" }, 'fast' );
             $this.removeClass("close")
                 .addClass("open")
-                .animate( { "height": "100px" }, 'fast' );  
+                .animate( { "height": "6vh" }, 'fast' );  
         }
     });
 });
