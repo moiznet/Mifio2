@@ -2,25 +2,31 @@
 
 
 .block.open {
-    background-color: cadetblue;
+    background-color: transparent;
     width: 100%;
-    height: 12vh !important;
+    height: 25vh !important;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .btnitem {
     width: 31%;
-    height: 7vh;
-    max-width: 31%;
+    height: 12vh;
+    max-width: 222px;
     float: left;
-    border-radius: 2.9em;
+    border-radius: 1.01em;
     display: inline;
     margin: 1vh 1%;
+    overflow: hidden;
+    margin-top: 4vh;
 }
 
 .img {
     width: 100%;
     height: 100vh;
     background-size: contain;
+    background-position: top;
+    overflow: auto;
 } *{
     padding:0;
     margin:0;
@@ -108,7 +114,7 @@ li:nth-child(3) a{
     width:100%;
     height: 46vh !important;
     transform:translateY(150px);
-    background-color: blanchedalmond;
+    background-color: #e8ceae;
 }
 li,a,.layer{
     /*! background:#fff; */
@@ -116,12 +122,15 @@ li,a,.layer{
 }
 .text{
     margin:.6rem;
-    padding:5px;
+    padding:6px;
     font-family: 'Varela Round', sans-serif;
-    font-size: 1.7em;
+    font-size: 1.9em;
+    text-align: center;
+    color: white;
+    background-color: transparent;
 }
 .text p{
-    color:#bfbfbf;
+    color:#102d73;
     font-size: 0.5em;
     padding-left: 0.4%;
 }
@@ -133,7 +142,7 @@ li,a,.layer{
     /* background-color: thistle; */
 }
 .fab{ margin:0 1rem 0 0;}
-.fab:nth-child(1){max-width: 48%;color:#E34F26;float: left;border-left: 1px solid gray;padding-left: 2%;padding-top: 1vh;}
+.fab:nth-child(1){max-width: 48%;color:#E34F26;float: left;border-left: 1px solid gray;padding-left: 2%;padding-top: 1vh;text-align: right;}
 .fab:nth-child(2){color:#1572B6;border-left: 1px solid gray;font-size: 1em;max-width: 48%;padding-left: 3%;padding-top: 1vh;}
 
 
@@ -167,9 +176,9 @@ number{
 font-size:1em;
 }
 .block.close {}
-.skill2 { width: 100%;}
+.skill2 { width: 100%;background-color: transparent;}
 .block.close {
-    height: 3vh !important;
+    height: 4vh !important;
     background-color: azure;
     width: 100%;
 }
@@ -369,6 +378,42 @@ background-color: #F5F5F5;
 border-radius: 10px;
 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 background-color: #555;
+}
+    
+    
+    
+.buttonsodamachine {
+  width: 129%;
+  overflow: visible;
+  float: left;
+}
+#modmachine {
+  overflow: hidden;
+  height: 36vh;
+  width: 180%;
+  background-color: transparent;
+}
+.title {
+  float: left;
+  background-color: burlywood;
+  width: 100%;
+  padding: 0.5em;
+  color: #64360d;
+  font-weight: initial;
+  font-size: 1.em;
+}
+.mask {
+  margin-top: 3vh;
+  width: 100%;
+}
+.open .title {
+  font-weight: bolder;
+}
+.block.close:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+.block.close {
 }
 
 
